@@ -19,6 +19,21 @@
                     <div class="row">
 
                         <div class="col-lg-12">
+                            <div class="row">
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Registered Email</label>
+                                        <input type="email" class="form-control" value="{{ Auth::user()->email ?? "zahidjakhar2370@gmail.com" }}" name="user_email" required readonly>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        {{-- <label></label> --}}
+                                        <input type="submit" class="btn btn-primary mt-4 w-30" value="Verify">
+                                    </div>
+                                </div></div>
                             <div class="card">
                                 <h4><i class="ti-email"></i> Smtp Mail Setup</h4>
                                 <div class="card-body">
